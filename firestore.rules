@@ -1,0 +1,160 @@
+rules_version = '2';
+
+// Security Rules für Znacht (Testversion), siehe docs/SPEC.md Abschnitt 4.
+//
+// - Stammdaten (ingredients, products, recipes) und config: für eingeloggte
+//   Nutzer (auch anonym) lesbar, für Clients nie schreibbar. Functions und
+//   Import-Skripte schreiben mit dem Admin SDK, das die Rules umgeht.
+// - Haushalt mit Vorrat und Wochen: nur für Mitglieder (memberUids) lesbar und
+//   schreibbar. Konvention: householdId = UID des Kontos, das ihn anlegt.
+// - feedback und events: nur eigene Einträge anlegen, nie lesen, ändern oder
+//   löschen. Löschen im Rahmen von «Daten löschen» übernimmt später eine
+//   Cloud Function.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMember(householdId) {
+      let path = /databases/$(database)/documents/households/$(householdId);
+      return signedIn() && exists(path)
+        && request.auth.uid in get(path).data.memberUids;
+    }
+
+    // Für feedback/events: die eigene Haushalts-ID (auch bevor das
+    // Haushaltsdokument existiert, z. B. bei onboarding_step_viewed Schritt 1).
+    function isOwnHouseholdId(householdId) {
+      return householdId == request.auth.uid || isMember(householdId);
+    }
+
+    function optional(d, key, cond) {
+      return !(key in d) || cond;
+    }
+
+    function isStringList(v) {
+      return v is list && v.size() <= 200;
+    }
+
+    function validHousehold(d) {
+      return d.keys().hasOnly([
+          'memberUids', 'retailer', 'postalCode', 'servings', 'kidFriendly',
+          'cookingDays', 'shoppingDay', 'budgetChf', 'cheapestMode', 'diet',
+          'allergens', 'avoidIngredientIds', 'appliances', 'hiddenRecipeIds',
+          'favoriteRecipeIds', 'painPoint', 'testerName', 'createdAt'])
+        && d.memberUids is list
+        && optional(d, 'retailer', d.retailer in ['migros', 'coop', 'aldi', 'lidl', 'denner'])
+        && optional(d, 'postalCode', d.postalCode is string && d.postalCode.matches('^[1-9][0-9]{3}$'))
+        && optional(d, 'servings', d.servings is int && d.servings >= 1 && d.servings <= 8)
+        && optional(d, 'kidFriendly', d.kidFriendly is bool)
+        && optional(d, 'cookingDays', d.cookingDays is list && d.cookingDays.size() <= 7)
+        && optional(d, 'shoppingDay', d.shoppingDay == 'auto'
+             || (d.shoppingDay is int && d.shoppingDay >= 1 && d.shoppingDay <= 7))
+        && optional(d, 'budgetChf', d.budgetChf is number && d.budgetChf >= 40 && d.budgetChf <= 250)
+        && optional(d, 'cheapestMode', d.cheapestMode is bool)
+        && optional(d, 'diet', d.diet in ['omnivore', 'vegetarian', 'vegan', 'pescetarian', 'high_protein'])
+        && optional(d, 'allergens', isStringList(d.allergens))
+        && optional(d, 'avoidIngredientIds', isStringList(d.avoidIngredientIds))
+        && optional(d, 'appliances', isStringList(d.appliances))
+        && optional(d, 'hiddenRecipeIds', isStringList(d.hiddenRecipeIds))
+        && optional(d, 'favoriteRecipeIds', isStringList(d.favoriteRecipeIds))
+        && optional(d, 'painPoint', d.painPoint in ['too_expensive', 'no_ideas', 'too_much_waste', 'no_time'])
+        && optional(d, 'testerName', d.testerName == null
+             || (d.testerName is string && d.testerName.size() <= 40));
+    }
+
+    // ---------- Stammdaten und Konfiguration ----------
+
+    match /ingredients/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /products/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /recipes/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /config/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // ---------- Nutzerdaten ----------
+
+    match /households/{householdId} {
+      allow read: if isMember(householdId);
+      allow create: if signedIn()
+        && householdId == request.auth.uid
+        && request.resource.data.memberUids == [request.auth.uid]
+        && validHousehold(request.resource.data);
+      // memberUids kann ein Client nicht ändern (Haushalt teilen ist nicht Teil der Testversion).
+      allow update: if isMember(householdId)
+        && request.resource.data.memberUids == resource.data.memberUids
+        && validHousehold(request.resource.data);
+      allow delete: if isMember(householdId);
+
+      match /pantry/{ingredientId} {
+        allow read, delete: if isMember(householdId);
+        allow create, update: if isMember(householdId)
+          && request.resource.data.ingredientId == ingredientId
+          && request.resource.data.keys().hasOnly(
+               ['ingredientId', 'isStapleOverride', 'leftoverQty', 'updatedAt'])
+          && optional(request.resource.data, 'leftoverQty',
+               request.resource.data.leftoverQty == null
+               || (request.resource.data.leftoverQty is number && request.resource.data.leftoverQty >= 0))
+          && optional(request.resource.data, 'isStapleOverride',
+               request.resource.data.isStapleOverride == null
+               || request.resource.data.isStapleOverride is bool);
+      }
+
+      match /weeks/{weekId} {
+        allow read, delete: if isMember(householdId);
+        allow create, update: if isMember(householdId)
+          && request.resource.data.weekId == weekId
+          && weekId.matches('^[0-9]{4}-W[0-9]{2}$')
+          && request.resource.data.status in ['open', 'locked', 'done'];
+      }
+    }
+
+    // ---------- Testauswertung ----------
+
+    match /feedback/{id} {
+      allow read, update, delete: if false;
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(
+             ['householdId', 'uid', 'screen', 'type', 'text', 'answers', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && isOwnHouseholdId(request.resource.data.householdId)
+        && request.resource.data.type in ['free_text', 'weekly_survey']
+        && request.resource.data.screen is string
+        && (request.resource.data.text == null
+            || (request.resource.data.text is string && request.resource.data.text.size() <= 5000))
+        && request.resource.data.createdAt == request.time;
+    }
+
+    match /events/{id} {
+      allow read, update, delete: if false;
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(
+             ['householdId', 'uid', 'name', 'props', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && isOwnHouseholdId(request.resource.data.householdId)
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 64
+        && request.resource.data.createdAt == request.time;
+    }
+
+    // Alles andere ist gesperrt.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

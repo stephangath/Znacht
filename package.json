@@ -1,0 +1,14 @@
+{
+  "name": "znacht",
+  "private": true,
+  "description": "Znacht – Wochenplaner für Abendessen (Testversion). Befehle für Emulatoren, Daten und Tests.",
+  "scripts": {
+    "setup": "npm --prefix functions ci && npm --prefix scripts ci && cd app && flutter pub get",
+    "emulators": "npm --prefix functions run build && firebase emulators:start --project demo-znacht --import=./emulator-data --export-on-exit=./emulator-data",
+    "emulators:fresh": "npm --prefix functions run build && firebase emulators:start --project demo-znacht",
+    "data:validate": "npm --prefix scripts run validate",
+    "data:import": "npm --prefix scripts run import",
+    "test": "npm --prefix functions test && npm --prefix scripts test && cd app && flutter test",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-znacht-rules \"npm --prefix functions run test:rules\""
+  }
+}
