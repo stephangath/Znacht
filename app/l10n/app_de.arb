@@ -1,0 +1,38 @@
+{
+  "@@locale": "de",
+  "appTitle": "Znacht",
+  "tabWeek": "Woche",
+  "tabShopping": "Einkauf",
+  "tabKitchen": "Küche",
+  "tabProfile": "Profil",
+  "weekEmptyTitle": "Dein Wochenplan",
+  "weekEmptyBody": "Hier erscheinen bald die Abendessen deiner Woche.",
+  "shoppingEmptyTitle": "Einkaufsliste",
+  "shoppingEmptyBody": "Hier erscheint bald deine Einkaufsliste mit geschätzten Preisen.",
+  "kitchenEmptyTitle": "Vorrat",
+  "kitchenEmptyBody": "Hier verwaltest du bald, was du schon zu Hause hast.",
+  "profileEmptyTitle": "Profil",
+  "profileEmptyBody": "Hier kannst du bald deine Haushaltsangaben bearbeiten.",
+  "devInfoTitle": "Entwicklung",
+  "devInfoEmulator": "Verbunden mit lokalen Firebase-Emulatoren",
+  "devInfoCatalog": "{recipes} Rezepte, aktive Händler: {retailers}",
+  "@devInfoCatalog": {
+    "placeholders": {
+      "recipes": {
+        "type": "int"
+      },
+      "retailers": {
+        "type": "String"
+      }
+    }
+  },
+  "devInfoNoData": "Keine Stammdaten gefunden. Import starten: npm run data:import",
+  "devInfoError": "Keine Verbindung zum Emulator: {error}",
+  "@devInfoError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  }
+}
