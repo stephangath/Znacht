@@ -1,0 +1,41 @@
+# Abhängigkeiten und Builds
+node_modules/
+functions/lib/
+scripts/dist/
+app/build/
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.pub-cache/
+app/.pub/
+.dart_tool/
+coverage/
+
+# Firebase
+.firebase/
+firebase-debug*.log
+firestore-debug.log
+ui-debug.log
+database-debug.log
+pubsub-debug.log
+emulator-data/
+.runtimeconfig.json
+
+# Geheimnisse und lokale Konfiguration (nur *.example committen)
+.env
+.env.*
+!.env.example
+**/service-account*.json
+**/*-adminsdk-*.json
+app/lib/firebase_options_prod.dart
+app/android/app/google-services.json
+app/ios/Runner/GoogleService-Info.plist
+
+# Export der Testauswertung (enthält Testerdaten)
+exports/
+
+# Editor / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
