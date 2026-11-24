@@ -1,0 +1,81 @@
+retailer,ingredientId,label,packSize,priceChf,priceCheckedAt,isDummy
+migros,salz,Kochsalz 500 g,500,1.00,2026-11-24,true
+migros,pfeffer,Pfeffer gemahlen 50 g,50,2.50,2026-11-24,true
+migros,oel,Rapsöl 1 l,1000,5.00,2026-11-24,true
+migros,mehl,Weissmehl 1 kg,1000,1.50,2026-11-24,true
+migros,zucker,Zucker 1 kg,1000,1.50,2026-11-24,true
+migros,essig,Weissweinessig 500 ml,500,2.00,2026-11-24,true
+migros,bouillon,Gemüsebouillon 250 g,250,4.00,2026-11-24,true
+migros,karotten,Karotten 1 kg,1000,2.00,2026-11-24,true
+migros,zwiebeln,Zwiebeln 5 Stück,5,2.00,2026-11-24,true
+migros,knoblauch,Knoblauch 100 g,100,1.50,2026-11-24,true
+migros,kartoffeln,Kartoffeln festkochend 1 kg,1000,2.50,2026-11-24,true
+migros,currypaste,Rote Currypaste 100 g,100,3.00,2026-11-24,true
+migros,peperoni,Peperoni gemischt 3 Stück,3,3.50,2026-11-24,true
+migros,zucchetti,Zucchetti 500 g,500,2.50,2026-11-24,true
+migros,broccoli,Broccoli 500 g,500,3.00,2026-11-24,true
+migros,spinat,Blattspinat 250 g,250,3.00,2026-11-24,true
+migros,champignons,Champignons weiss 250 g,250,3.00,2026-11-24,true
+migros,lauch,Lauch 500 g,500,2.50,2026-11-24,true
+migros,kuerbis,Kürbis 1 kg,1000,3.50,2026-11-24,true
+migros,koriander,Koriander frisch 20 g,20,2.00,2026-11-24,true
+migros,zitronen,Zitronen 4 Stück,4,2.50,2026-11-24,true
+migros,feta,Feta 200 g,200,3.50,2026-11-24,true
+migros,mozzarella,Mozzarella 150 g,150,1.50,2026-11-24,true
+migros,reibkaese,Reibkäse 120 g,120,3.00,2026-11-24,true
+migros,rahm,Vollrahm 250 ml,250,2.50,2026-11-24,true
+migros,butter,Butter 250 g,250,3.50,2026-11-24,true
+migros,joghurt,Joghurt nature 500 g,500,2.00,2026-11-24,true
+migros,eier,Eier 6 Stück,6,4.00,2026-11-24,true
+migros,tofu,Tofu nature 300 g,300,3.50,2026-11-24,true
+migros,pouletbrust,Pouletbrust 500 g,500,12.00,2026-11-24,true
+migros,hackfleisch,Rindshackfleisch 500 g,500,9.00,2026-11-24,true
+migros,erdnuesse,Erdnüsse geröstet 200 g,200,2.50,2026-11-24,true
+migros,lachs,Lachsfilet 250 g,250,9.00,2026-11-24,true
+migros,spaghetti,Spaghetti 500 g,500,2.00,2026-11-24,true
+migros,reis,Langkornreis 1 kg,1000,3.00,2026-11-24,true
+migros,linsen,Rote Linsen 500 g,500,3.00,2026-11-24,true
+migros,kichererbsen,Kichererbsen Dose 400 g,400,1.50,2026-11-24,true
+migros,tomaten_dose,Gehackte Tomaten Dose 400 g,400,1.50,2026-11-24,true
+migros,kokosmilch,Kokosmilch 400 ml,400,2.50,2026-11-24,true
+migros,sojasauce,Sojasauce 250 ml,250,3.00,2026-11-24,true
+coop,salz,Kochsalz 500 g,500,1.50,2026-11-24,true
+coop,pfeffer,Pfeffer gemahlen 50 g,50,3.00,2026-11-24,true
+coop,oel,Rapsöl 1 l,1000,5.50,2026-11-24,true
+coop,mehl,Weissmehl 1 kg,1000,2.00,2026-11-24,true
+coop,zucker,Zucker 1 kg,1000,2.00,2026-11-24,true
+coop,essig,Weissweinessig 500 ml,500,2.50,2026-11-24,true
+coop,bouillon,Gemüsebouillon 250 g,250,4.50,2026-11-24,true
+coop,karotten,Karotten 1 kg,1000,2.50,2026-11-24,true
+coop,zwiebeln,Zwiebeln 5 Stück,5,2.50,2026-11-24,true
+coop,knoblauch,Knoblauch 100 g,100,2.00,2026-11-24,true
+coop,kartoffeln,Kartoffeln festkochend 1 kg,1000,3.00,2026-11-24,true
+coop,currypaste,Rote Currypaste 100 g,100,3.50,2026-11-24,true
+coop,peperoni,Peperoni gemischt 3 Stück,3,4.00,2026-11-24,true
+coop,zucchetti,Zucchetti 500 g,500,3.00,2026-11-24,true
+coop,broccoli,Broccoli 500 g,500,3.50,2026-11-24,true
+coop,spinat,Blattspinat 250 g,250,3.50,2026-11-24,true
+coop,champignons,Champignons weiss 250 g,250,3.50,2026-11-24,true
+coop,lauch,Lauch 500 g,500,3.00,2026-11-24,true
+coop,kuerbis,Kürbis 1 kg,1000,4.00,2026-11-24,true
+coop,koriander,Koriander frisch 20 g,20,2.50,2026-11-24,true
+coop,zitronen,Zitronen 4 Stück,4,3.00,2026-11-24,true
+coop,feta,Feta 200 g,200,4.00,2026-11-24,true
+coop,mozzarella,Mozzarella 150 g,150,2.00,2026-11-24,true
+coop,reibkaese,Reibkäse 120 g,120,3.50,2026-11-24,true
+coop,rahm,Vollrahm 250 ml,250,3.00,2026-11-24,true
+coop,butter,Butter 250 g,250,4.00,2026-11-24,true
+coop,joghurt,Joghurt nature 500 g,500,2.50,2026-11-24,true
+coop,eier,Eier 6 Stück,6,4.50,2026-11-24,true
+coop,tofu,Tofu nature 300 g,300,4.00,2026-11-24,true
+coop,pouletbrust,Pouletbrust 500 g,500,12.50,2026-11-24,true
+coop,hackfleisch,Rindshackfleisch 500 g,500,9.50,2026-11-24,true
+coop,erdnuesse,Erdnüsse geröstet 200 g,200,3.00,2026-11-24,true
+coop,lachs,Lachsfilet 250 g,250,9.50,2026-11-24,true
+coop,spaghetti,Spaghetti 500 g,500,2.50,2026-11-24,true
+coop,reis,Langkornreis 1 kg,1000,3.50,2026-11-24,true
+coop,linsen,Rote Linsen 500 g,500,3.50,2026-11-24,true
+coop,kichererbsen,Kichererbsen Dose 400 g,400,2.00,2026-11-24,true
+coop,tomaten_dose,Gehackte Tomaten Dose 400 g,400,2.00,2026-11-24,true
+coop,kokosmilch,Kokosmilch 400 ml,400,3.00,2026-11-24,true
+coop,sojasauce,Sojasauce 250 ml,250,3.50,2026-11-24,true

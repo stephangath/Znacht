@@ -1,0 +1,31 @@
+id,title,servings,prepMinutes,appliances,dietTags,kidFriendly,mainProtein,cuisine,imagePath,isDummy
+ofengemuese-feta,Ofengemüse mit Feta,2,35,oven,vegetarian,true,cheese,mediterran,,true
+spaghetti-bolognese,Spaghetti Bolognese,2,40,stove,,true,beef,italienisch,,true
+linsen-dal,Rotes Linsen-Dal mit Reis,2,30,stove,vegan|vegetarian,false,legumes,indisch,,true
+poulet-curry,Poulet-Curry mit Reis,2,30,stove,high_protein,false,chicken,asiatisch,,true
+lachs-ofenkartoffeln,Lachs mit Ofenkartoffeln,2,35,oven,pescetarian|high_protein,true,fish,schweiz,,true
+kuerbissuppe,Kürbissuppe,2,35,stove,vegetarian,true,none,schweiz,,true
+champignon-risotto,Champignon-Risotto,2,40,stove,vegetarian,true,cheese,italienisch,,true
+tofu-gemuesepfanne,Tofu-Gemüse-Pfanne,2,25,stove,vegan|vegetarian,false,tofu,asiatisch,,true
+spinat-omelette,Spinat-Omelette,2,15,stove,vegetarian,true,egg,schweiz,,true
+kichererbsen-chili,Kichererbsen-Chili mit Reis,2,40,stove,vegan|vegetarian,false,legumes,mexikanisch,,true
+gefuellte-peperoni,Gefüllte Peperoni,2,50,oven,,false,beef,mediterran,,true
+gemuesewok-erdnuss,Gemüsewok mit Erdnüssen,2,25,stove,vegan|vegetarian,false,none,asiatisch,,true
+poulet-geschnetzeltes,Poulet-Geschnetzeltes mit Reis,2,30,stove,high_protein,true,chicken,schweiz,,true
+spaghetti-tomatensauce,Spaghetti an Tomatensauce,2,25,stove,vegetarian,true,none,italienisch,,true
+roesti-spiegelei,Rösti mit Spiegelei,2,40,stove,vegetarian,true,egg,schweiz,,true
+lachs-spinat-pasta,Lachs-Spinat-Pasta,2,25,stove,pescetarian,true,fish,italienisch,,true
+kichererbsen-curry,Kichererbsen-Spinat-Curry,2,30,stove,vegan|vegetarian,false,legumes,indisch,,true
+zucchetti-gratin,Zucchetti-Kartoffel-Gratin mit Mozzarella,2,45,oven,vegetarian,true,cheese,mediterran,,true
+broccoli-gratin,Broccoli-Kartoffel-Gratin,2,55,oven,vegetarian,true,cheese,schweiz,,true
+lauchsuppe,Lauch-Kartoffel-Suppe,2,30,stove,vegetarian,true,none,schweiz,,true
+poulet-ofengemuese,Poulet mit Ofengemüse,2,45,oven,high_protein,true,chicken,mediterran,,true
+hackbaellchen-tomaten,Hackbällchen an Tomatensauce,2,40,stove,high_protein,true,beef,italienisch,,true
+tofu-curry,Rotes Tofu-Curry,2,30,stove,vegan|vegetarian,false,tofu,asiatisch,,true
+shakshuka,Shakshuka mit Feta,2,30,stove,vegetarian,false,egg,orientalisch,,true
+linsen-bolognese,Linsen-Bolognese,2,35,stove,vegan|vegetarian,true,legumes,italienisch,,true
+lachs-bowl,Lachs-Bowl mit Reis,2,25,stove,pescetarian,false,fish,asiatisch,,true
+ofenkuerbis-linsen,Ofenkürbis mit Linsen und Feta,2,45,oven|stove,vegetarian,false,cheese,mediterran,,true
+gemuese-frittata,Gemüse-Frittata,2,30,stove|oven,vegetarian,true,egg,italienisch,,true
+poulet-erdnuss-pfanne,Poulet-Erdnuss-Pfanne,2,25,stove,high_protein,false,chicken,asiatisch,,true
+kartoffelwedges-dip,Kartoffelwedges mit Joghurt-Dip,2,35,airfryer,vegetarian,true,none,schweiz,,true

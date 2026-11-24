@@ -1,0 +1,95 @@
+recipeId,stepNo,text,minutes
+ofengemuese-feta,1,Ofen auf 200 °C vorheizen.,5
+ofengemuese-feta,2,"Gemüse in mundgerechte Stücke schneiden, mit Öl und Salz mischen und auf ein Blech geben.",10
+ofengemuese-feta,3,"Etwa 25 Minuten backen, Feta darüberbröckeln und 5 Minuten weiterbacken.",30
+spaghetti-bolognese,1,"Zwiebel, Karotte und Knoblauch fein hacken und in Öl andünsten.",5
+spaghetti-bolognese,2,Hackfleisch zugeben und krümelig anbraten.,5
+spaghetti-bolognese,3,Tomaten zugeben und 20 Minuten köcheln lassen.,20
+spaghetti-bolognese,4,Spaghetti kochen und mit Sauce und Reibkäse servieren.,10
+linsen-dal,1,"Zwiebel und Knoblauch hacken und in Öl andünsten, Currypaste kurz mitrösten.",5
+linsen-dal,2,"Linsen, Tomaten, Kokosmilch und 300 ml Wasser zugeben, 20 Minuten köcheln.",20
+linsen-dal,3,Reis nach Packungsangabe kochen und dazu servieren.,5
+poulet-curry,1,Reis aufsetzen.,5
+poulet-curry,2,"Poulet in Streifen schneiden und in Öl anbraten, Peperoni zugeben.",10
+poulet-curry,3,"Currypaste und Kokosmilch einrühren, 10 Minuten köcheln.",15
+lachs-ofenkartoffeln,1,"Ofen auf 220 °C vorheizen, Kartoffeln vierteln, mit Öl und Salz auf das Blech geben.",5
+lachs-ofenkartoffeln,2,Kartoffeln 15 Minuten backen.,15
+lachs-ofenkartoffeln,3,"Lachs dazulegen, mit Zitrone beträufeln und 12 Minuten mitbacken.",12
+lachs-ofenkartoffeln,4,Mit Joghurt servieren.,3
+kuerbissuppe,1,Kürbis und Zwiebel würfeln und in Butter andünsten.,5
+kuerbissuppe,2,"Mit 600 ml Wasser und Bouillon aufgiessen, 20 Minuten köcheln.",20
+kuerbissuppe,3,"Pürieren, Rahm einrühren und abschmecken.",10
+champignon-risotto,1,"Zwiebel hacken und in Butter andünsten, Reis kurz mitdünsten.",5
+champignon-risotto,2,Nach und nach 700 ml Bouillon zugeben und unter Rühren 20 Minuten garen.,20
+champignon-risotto,3,"Champignons separat anbraten, mit dem Reibkäse unterziehen.",10
+tofu-gemuesepfanne,1,Reis aufsetzen.,5
+tofu-gemuesepfanne,2,Tofu würfeln und in Öl knusprig braten.,8
+tofu-gemuesepfanne,3,"Broccoli, Peperoni und Knoblauch zugeben, 6 Minuten braten, mit Sojasauce ablöschen.",10
+spinat-omelette,1,Eier verquirlen und salzen.,2
+spinat-omelette,2,Spinat in Butter zusammenfallen lassen.,3
+spinat-omelette,3,"Eier darübergiessen, Käse daraufstreuen und bei mittlerer Hitze stocken lassen.",8
+kichererbsen-chili,1,"Zwiebel, Knoblauch und Peperoni hacken und in Öl andünsten.",5
+kichererbsen-chili,2,"Kichererbsen und Tomaten zugeben, 25 Minuten köcheln.",25
+kichererbsen-chili,3,Reis kochen und dazu servieren.,5
+gefuellte-peperoni,1,"Ofen auf 200 °C vorheizen, Reis vorkochen.",15
+gefuellte-peperoni,2,Hackfleisch anbraten und mit Reis mischen.,5
+gefuellte-peperoni,3,"Peperoni halbieren, füllen, in eine Form mit Tomaten setzen, mit Käse bestreuen.",5
+gefuellte-peperoni,4,25 Minuten backen.,25
+gemuesewok-erdnuss,1,Reis aufsetzen.,5
+gemuesewok-erdnuss,2,Gemüse in Streifen schneiden und in Öl unter Rühren braten.,10
+gemuesewok-erdnuss,3,Mit Sojasauce ablöschen und mit Erdnüssen bestreuen.,3
+poulet-geschnetzeltes,1,Reis aufsetzen.,5
+poulet-geschnetzeltes,2,"Poulet in Streifen schneiden und in Butter anbraten, herausnehmen.",8
+poulet-geschnetzeltes,3,"Zwiebel und Champignons dünsten, Rahm zugeben, Poulet wieder beigeben und kurz köcheln.",12
+spaghetti-tomatensauce,1,Zwiebel und Knoblauch in Öl andünsten.,5
+spaghetti-tomatensauce,2,Tomaten zugeben und 15 Minuten köcheln.,15
+spaghetti-tomatensauce,3,"Spaghetti kochen, mit Sauce und Käse servieren.",10
+roesti-spiegelei,1,"Kartoffeln schälen und grob reiben, salzen.",10
+roesti-spiegelei,2,In Butter in der Pfanne beidseitig goldbraun braten.,25
+roesti-spiegelei,3,Spiegeleier braten und auf die Rösti geben.,5
+lachs-spinat-pasta,1,Spaghetti kochen.,10
+lachs-spinat-pasta,2,"Lachs würfeln und kurz anbraten, Spinat zugeben.",5
+lachs-spinat-pasta,3,"Rahm und Zitronensaft zugeben, mit den Spaghetti mischen.",5
+kichererbsen-curry,1,Reis aufsetzen.,5
+kichererbsen-curry,2,"Currypaste kurz anrösten, Kokosmilch und Kichererbsen zugeben, 10 Minuten köcheln.",12
+kichererbsen-curry,3,"Spinat unterziehen, bis er zusammenfällt.",3
+zucchetti-gratin,1,Ofen auf 200 °C vorheizen.,5
+zucchetti-gratin,2,"Kartoffeln und Zucchetti in Scheiben schneiden, mit Tomaten in eine Form schichten.",10
+zucchetti-gratin,3,Mozzarella darauf verteilen und 30 Minuten backen.,30
+broccoli-gratin,1,"Ofen auf 200 °C vorheizen, Kartoffeln in Scheiben schneiden.",10
+broccoli-gratin,2,Broccoli in Röschen teilen und 3 Minuten blanchieren.,5
+broccoli-gratin,3,"Alles in eine Form geben, Rahm darübergiessen, Käse daraufstreuen, 35 Minuten backen.",40
+lauchsuppe,1,"Lauch in Ringe, Kartoffeln in Würfel schneiden und in Butter andünsten.",5
+lauchsuppe,2,"Mit 700 ml Wasser und Bouillon aufgiessen, 20 Minuten köcheln.",20
+lauchsuppe,3,Rahm zugeben und nach Belieben pürieren.,5
+poulet-ofengemuese,1,Ofen auf 200 °C vorheizen.,5
+poulet-ofengemuese,2,"Gemüse schneiden, mit Öl mischen und 20 Minuten backen.",20
+poulet-ofengemuese,3,"Poulet würzen, dazulegen und 18 Minuten mitbacken.",20
+hackbaellchen-tomaten,1,"Hackfleisch mit Ei, Mehl und gehackter halber Zwiebel mischen und Bällchen formen.",10
+hackbaellchen-tomaten,2,Bällchen rundum anbraten.,8
+hackbaellchen-tomaten,3,"Tomaten und restliche Zwiebel zugeben, 15 Minuten köcheln.",15
+hackbaellchen-tomaten,4,Spaghetti kochen und dazu servieren.,10
+tofu-curry,1,Reis aufsetzen.,5
+tofu-curry,2,"Tofu würfeln und anbraten, Currypaste mitrösten.",8
+tofu-curry,3,"Zucchetti und Kokosmilch zugeben, 10 Minuten köcheln.",12
+shakshuka,1,"Zwiebel, Peperoni und Knoblauch andünsten.",8
+shakshuka,2,Tomaten zugeben und 10 Minuten köcheln.,10
+shakshuka,3,"Mulden formen, Eier hineinschlagen, zugedeckt stocken lassen, Feta darüberstreuen.",10
+linsen-bolognese,1,Zwiebel und Karotte fein hacken und in Öl andünsten.,5
+linsen-bolognese,2,"Linsen, Tomaten und 250 ml Wasser zugeben, 20 Minuten köcheln.",20
+linsen-bolognese,3,Spaghetti kochen und mit der Sauce servieren.,10
+lachs-bowl,1,Reis kochen.,15
+lachs-bowl,2,"Lachs in Würfel schneiden und kurz anbraten, mit Sojasauce ablöschen.",5
+lachs-bowl,3,"Karotten raffeln, alles in Schalen anrichten, mit Koriander bestreuen.",5
+ofenkuerbis-linsen,1,"Ofen auf 200 °C vorheizen, Kürbis in Spalten schneiden, mit Öl backen.",30
+ofenkuerbis-linsen,2,Linsen in Salzwasser 10 Minuten kochen.,10
+ofenkuerbis-linsen,3,"Kürbis auf den Linsen anrichten, Feta darüberbröckeln.",5
+gemuese-frittata,1,"Ofen auf 180 °C vorheizen, Gemüse würfeln und in einer ofenfesten Pfanne andünsten.",8
+gemuese-frittata,2,"Eier mit Käse verquirlen, über das Gemüse giessen.",2
+gemuese-frittata,3,Im Ofen 15 Minuten stocken lassen.,15
+poulet-erdnuss-pfanne,1,Reis aufsetzen.,5
+poulet-erdnuss-pfanne,2,Poulet in Streifen in Öl anbraten.,8
+poulet-erdnuss-pfanne,3,"Broccoli zugeben, 5 Minuten braten, mit Sojasauce und Erdnüssen fertigstellen.",8
+kartoffelwedges-dip,1,Kartoffeln in Schnitze schneiden und mit Öl und Salz mischen.,5
+kartoffelwedges-dip,2,"In der Heissluftfritteuse bei 200 °C etwa 25 Minuten garen, zwischendurch schütteln.",25
+kartoffelwedges-dip,3,Joghurt mit Knoblauch und Zitronensaft verrühren.,3

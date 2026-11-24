@@ -1,0 +1,41 @@
+id,name,category,unit,isStaple,allergens,dietTags
+salz,Salz,backen_gewuerze,g,true,,vegan|vegetarian
+pfeffer,Pfeffer,backen_gewuerze,g,true,,vegan|vegetarian
+oel,Öl,backen_gewuerze,ml,true,,vegan|vegetarian
+mehl,Mehl,backen_gewuerze,g,true,gluten,vegan|vegetarian
+zucker,Zucker,backen_gewuerze,g,true,,vegan|vegetarian
+essig,Essig,backen_gewuerze,ml,true,,vegan|vegetarian
+bouillon,Bouillon,backen_gewuerze,g,true,celery,vegan|vegetarian
+karotten,Karotten,gemuese,g,false,,vegan|vegetarian
+zwiebeln,Zwiebeln,gemuese,stk,false,,vegan|vegetarian
+knoblauch,Knoblauch,gemuese,g,false,,vegan|vegetarian
+kartoffeln,Kartoffeln,gemuese,g,false,,vegan|vegetarian
+currypaste,Rote Currypaste,konserven,g,false,,vegan|vegetarian
+peperoni,Peperoni,gemuese,stk,false,,vegan|vegetarian
+zucchetti,Zucchetti,gemuese,g,false,,vegan|vegetarian
+broccoli,Broccoli,gemuese,g,false,,vegan|vegetarian
+spinat,Blattspinat,gemuese,g,false,,vegan|vegetarian
+champignons,Champignons,gemuese,g,false,,vegan|vegetarian
+lauch,Lauch,gemuese,g,false,,vegan|vegetarian
+kuerbis,Kürbis,gemuese,g,false,,vegan|vegetarian
+koriander,Koriander,gemuese,g,false,,vegan|vegetarian
+zitronen,Zitronen,gemuese,stk,false,,vegan|vegetarian
+feta,Feta,milchprodukte,g,false,lactose,vegetarian
+mozzarella,Mozzarella,milchprodukte,g,false,lactose,vegetarian
+reibkaese,Reibkäse,milchprodukte,g,false,lactose,vegetarian
+rahm,Rahm,milchprodukte,ml,false,lactose,vegetarian
+butter,Butter,milchprodukte,g,false,lactose,vegetarian
+joghurt,Joghurt nature,milchprodukte,g,false,lactose,vegetarian
+eier,Eier,eier_tofu,stk,false,egg,vegetarian
+tofu,Tofu,eier_tofu,g,false,soy,vegan|vegetarian
+pouletbrust,Pouletbrust,fleisch,g,false,,
+hackfleisch,Hackfleisch,fleisch,g,false,,
+erdnuesse,Erdnüsse,snacks_nuesse,g,false,peanuts,vegan|vegetarian
+lachs,Lachsfilet,fisch,g,false,fish,pescetarian
+spaghetti,Spaghetti,teigwaren_reis,g,false,gluten,vegan|vegetarian
+reis,Reis,teigwaren_reis,g,false,,vegan|vegetarian
+linsen,Rote Linsen,teigwaren_reis,g,false,,vegan|vegetarian
+kichererbsen,Kichererbsen,konserven,g,false,,vegan|vegetarian
+tomaten_dose,Gehackte Tomaten,konserven,g,false,,vegan|vegetarian
+kokosmilch,Kokosmilch,konserven,ml,false,,vegan|vegetarian
+sojasauce,Sojasauce,konserven,ml,false,soy|gluten,vegan|vegetarian

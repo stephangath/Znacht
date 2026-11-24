@@ -1,0 +1,26 @@
+{
+  "name": "znacht-scripts",
+  "private": true,
+  "description": "Import und Validierung der Stammdaten für Znacht",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "validate": "tsx src/validate-cli.ts",
+    "import": "tsx src/import-cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "firebase-admin": "^13.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.43",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9"
+  }
+}

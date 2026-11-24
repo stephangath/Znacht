@@ -1,0 +1,5 @@
+{
+  "enabledRetailers": ["migros"],
+  "feedbackPromptAfterDays": 7,
+  "testMode": true
+}
